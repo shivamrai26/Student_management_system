@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+srms.db
+server.log
+server.err

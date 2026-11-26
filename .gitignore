@@ -1,0 +1,26 @@
+# Virtual Environments
+.venv/
+*/.venv/
+venv/
+ENV/
+
+# Python cache & artifacts
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# SQLite databases & logs
+*.db
+*.sqlite3
+*.log
+*.err
+
+# System & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
