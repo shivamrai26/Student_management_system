@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: student-management-system
+    runtime: python
+    plan: free
+    buildCommand: pip install -r srms-backend/requirements.txt
+    startCommand: uvicorn main:app --app-dir srms-backend --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.2
+      - key: SRMS_SECRET
+        generateValue: true
